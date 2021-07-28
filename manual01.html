@@ -11,7 +11,7 @@
         1,taminal でファイル作成
         2,vs-code で1,を開く
         3,.html　　的なファイル作成
-        4,git hab を開きrepozitoriを作成
+        4,git hab を開きrepozitoriを作成 + URLをcopy
         5,vs-code でターミナル
         6,git initする（初回のみ）
         7,git status """
@@ -21,7 +21,20 @@
            hello.html
            """
         8,git add .   それか git add xxx.html
-        9,
+        9,git status  """
+        On branch master
+        Changes to be committed:
+         (use "git restore --staged <file>..." to unstage)
+         new file: hello.html
+         """
+        10,git commit -m "説明的な？"
+        11,git status """
+        On branch master
+        nothing to commit, working tree clean
+        """
+        12,git remote add origin "ここに4,のURLをペタッとする"
+        13,git push origin masterする
+        14,<h4>完成!!</h4>
 
 
 
